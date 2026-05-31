@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F5F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3E7B57;
+}
+
+body {
+  background-color: #F3F5F4;
+  color: #1E293B;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Bento Grid Theme custom rules - Updated for light mode */
+.bento-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.bento-card:hover {
+  border-color: #85A947;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(11, 24, 18, 0.08);
+}
+
+.bento-btn-primary {
+  background-color: #123524;
+  border: 1px solid #1E3B2E;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.bento-btn-primary:hover {
+  background-color: #1A3F2C;
+  border-color: #85A947;
+}
+
+.bento-btn-accent {
+  background-color: #85A947;
+  color: #123524;
+  font-weight: 750;
+  border-radius: 10px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.bento-btn-accent:hover {
+  background-color: #92b852;
+  transform: scale(1.02);
+}
+
+.bento-input {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  color: #1E293B;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.bento-input:focus {
+  outline: none;
+  border-color: #85A947;
+  box-shadow: 0 0 0 2px rgba(133, 169, 71, 0.2);
+}
+
+/* Print Overrides styling for clean thermal slips */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

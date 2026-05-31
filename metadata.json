@@ -1,0 +1,6 @@
+{
+  "name": "Kedai Fizqo Cafe OS",
+  "description": "Integrated Cafe Operating System for Kedai Fizqo, featuring POS, Inventory, Recipes, Expenses, Dashboard, and Reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
